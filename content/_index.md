@@ -71,13 +71,13 @@ team:
   title_emphasis: "en équipe."
   members:
     - name: "Yuntian Ding"
-      role: "Doctorant · conduit la recherche"
+      role: "Doctorante en informatique"
       url: "https://scholar.google.com/citations?user=47yJ910AAAAJ&hl=en"
-    - name: "Nicolas Herbaut"
-      role: "Encadrement de la thèse"
+    - name: "Dr. Nicolas Herbaut"
+      role: "Co-Encadrant de thèse"
       url: "https://nextnet.top/"
-    - name: "Camille Salinesi"
-      role: "Encadrement de la thèse"
+    - name: "Pr. Camille Salinesi"
+      role: "Directeur de thèse"
       url: "https://www.pantheonsorbonne.fr/page-perso/camille.salinesi%40"
 reservation:
   eyebrow: "ET SI ON EN PARLAIT ?"
@@ -112,6 +112,3 @@ partners:
 footer_note: "Recherche doctorale en informatique · 2026"
 ---
 
-**Au travail, une réponse produite par l’IA peut sembler convaincante tout en demandant une vérification. À d’autres moments, on passe du temps à contrôler un résultat qui était correct.**
-
-Cette recherche en informatique étudie comment les professionnels évaluent la fiabilité de leurs outils d’IA, repèrent leurs erreurs et décident quand intervenir. Votre vécu concret peut aider à mieux comprendre ces décisions.
