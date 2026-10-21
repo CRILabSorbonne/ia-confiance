@@ -109,6 +109,6 @@ partners:
       width: 2080
       height: 628
       url: "https://cri.pantheonsorbonne.fr/en"
-footer_note: "Recherche doctorale en informatique · 2026"
+footer_note: "Centre de Recherche en informatique, Université Paris 1 - Panthéon-Sorbonne · 2026"
 ---
 
