@@ -28,7 +28,6 @@ jobs:
         uses: actions/checkout@v6
 
       - name: Configure GitHub Pages
-        id: pages
         uses: actions/configure-pages@v5
 
       - name: Install Hugo
@@ -40,9 +39,7 @@ jobs:
           echo "$RUNNER_TEMP/hugo" >> "$GITHUB_PATH"
 
       - name: Build site
-        env:
-          HUGO_BASE_URL: ${{ steps.pages.outputs.base_url }}
-        run: hugo --minify --cacheDir "$RUNNER_TEMP/hugo-cache" --baseURL "${HUGO_BASE_URL%/}/"
+        run: hugo --minify --cacheDir "$RUNNER_TEMP/hugo-cache"
 
       - name: Upload site artifact
         uses: actions/upload-pages-artifact@v4
