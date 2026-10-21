@@ -112,6 +112,3 @@ partners:
 footer_note: "Recherche doctorale en informatique · 2026"
 ---
 
-**Au travail, une réponse produite par l’IA peut sembler convaincante tout en demandant une vérification. À d’autres moments, on passe du temps à contrôler un résultat qui était correct.**
-
-Cette recherche en informatique étudie comment les professionnels évaluent la fiabilité de leurs outils d’IA, repèrent leurs erreurs et décident quand intervenir. Votre vécu concret peut aider à mieux comprendre ces décisions.
