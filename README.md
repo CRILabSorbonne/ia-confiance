@@ -31,3 +31,5 @@ Hugo crée `public/` ; ce dossier est ignoré par Git. Le protocole d'entretien 
 ## Publier sur GitHub Pages
 
 Le workflow `.github/workflows/pages.yml` construit le site avec Hugo puis publie `public/` à chaque push sur `main`. Il peut aussi être lancé manuellement depuis l'onglet **Actions**. La source de GitHub Pages doit être réglée sur **GitHub Actions** dans les paramètres du dépôt.
+
+Le domaine public est `https://etude-ia-travail.fr/`. En cas de changement de domaine, mettre à jour `baseURL` dans `hugo.toml` ainsi que le domaine personnalisé dans les paramètres GitHub Pages.

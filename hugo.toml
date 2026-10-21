@@ -1,4 +1,4 @@
-baseURL = 'https://crilabsorbonne.github.io/ia-confiance/'
+baseURL = 'https://etude-ia-travail.fr/'
 locale = 'fr'
 defaultContentLanguage = 'fr'
 title = 'IA au travail'
