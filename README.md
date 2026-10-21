@@ -1,19 +1,33 @@
-# IA au travail — page d'appel à participation
+# IA au travail — site Hugo
 
-Exemple de landing page statique en français pour recruter des professionnels utilisant l'IA au travail pour un entretien de recherche de 45 minutes.
+Ce site présente une recherche doctorale sur la confiance dans les outils d'IA au travail. Il est généré avec [Hugo](https://gohugo.io/) à partir de `content/_index.md`.
 
-## Voir le site
+## Modifier la page
 
-Ouvrir `index.html` dans un navigateur, ou servir ce dossier avec `python3 -m http.server 8000` puis ouvrir `http://localhost:8000`.
+- Changer les textes, les personnes, les liens des logos ou `booking_url` dans `content/_index.md`.
+- Modifier la mise en page dans `layouts/index.html` et les styles dans `static/styles.css`.
+- Les quatre logos sont dans `static/img/`.
 
-## Activer la réservation
-
-Dans `script.js`, remplacer la chaîne vide de `bookingUrl` par l'URL HTTPS de la page de réservation dédiée à ces entretiens. Les boutons de la page pointeront alors vers cette URL. Tant que l'URL est absente, ils conduisent à la section de réservation et celle-ci indique que le lien reste à ajouter.
+Le texte après le front matter de `_index.md` apparaît dans la section « La recherche ». Le reste du contenu éditorial se trouve dans son front matter. Tant que `booking_url` est vide, les boutons mènent à la section de réservation et affichent le message d'attente. Pour activer la réservation, renseigner une URL HTTPS dédiée aux entretiens.
 
 Le texte actuel ne précise ni l'enregistrement ni les modalités de traitement des données. Ajouter ces informations uniquement après validation du protocole de recherche.
 
+## Prévisualiser et générer
+
+Avec Hugo v0.168.0 ou une version compatible :
+
+```sh
+hugo server
+```
+
+Ouvrir l'adresse locale indiquée par Hugo. Pour générer les fichiers du site :
+
+```sh
+hugo --minify
+```
+
+Hugo crée `public/` ; ce dossier est ignoré par Git. Le protocole d'entretien reste dans le dépôt et n'est pas publié.
+
 ## Publier sur GitHub Pages
 
-Le workflow `.github/workflows/pages.yml` publie automatiquement le site à chaque push sur `main`. Il peut aussi être lancé manuellement depuis l'onglet **Actions** du dépôt. Seuls `index.html`, `styles.css`, `script.js` et les quatre logos utilisés dans le footer sont inclus dans le site publié ; le guide d'entretien reste dans le dépôt.
-
-Dans les paramètres du dépôt GitHub, choisir **Settings → Pages → Build and deployment → Source: GitHub Actions**. La première publication fournira l'adresse du site dans le résultat du workflow.
+Le workflow `.github/workflows/pages.yml` construit le site avec Hugo puis publie `public/` à chaque push sur `main`. Il peut aussi être lancé manuellement depuis l'onglet **Actions**. La source de GitHub Pages doit être réglée sur **GitHub Actions** dans les paramètres du dépôt.

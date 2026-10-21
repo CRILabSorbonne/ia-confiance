@@ -1,0 +1,5 @@
+baseURL = 'https://crilabsorbonne.github.io/ia-confiance/'
+locale = 'fr'
+defaultContentLanguage = 'fr'
+title = 'IA au travail'
+disableKinds = ['taxonomy', 'term', 'RSS', 'sitemap']

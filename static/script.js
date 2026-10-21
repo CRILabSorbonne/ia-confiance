@@ -1,5 +1,5 @@
-// Renseigner ici l'URL de réservation lorsque le calendrier des entretiens est prêt.
-const bookingUrl = "";
+// L'URL de réservation est définie dans content/_index.md.
+const bookingUrl = document.body.dataset.bookingUrl;
 
 if (bookingUrl) {
   try {
@@ -11,7 +11,7 @@ if (bookingUrl) {
         link.rel = "noopener noreferrer";
       });
       const status = document.querySelector(".booking-status");
-      if (status) status.textContent = "Le calendrier de réservation s’ouvre dans un nouvel onglet.";
+      if (status) status.textContent = document.body.dataset.bookingActiveMessage;
     }
   } catch {
     // Conserver le renvoi vers la section de réservation si l'URL est invalide.

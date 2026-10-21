@@ -14,3 +14,6 @@
 @media(max-width:750px){.partner-strip{padding:33px 0 36px}.partner-list{grid-template-columns:repeat(2,minmax(0,1fr))}.partner-list a{min-height:94px;padding:14px}.partner-list img{height:58px}}
 @media(max-width:450px){.partner-list{gap:9px}.partner-list a{min-height:82px;padding:10px}.partner-list img{height:54px}}
 @media(prefers-reduced-motion:reduce){.partner-list a{transition:none}}
+
+.research-content > p:first-child{font-size:20px;font-weight:600;line-height:1.55;color:var(--ink)}
+.research-content > p:first-child strong{font-weight:600}
