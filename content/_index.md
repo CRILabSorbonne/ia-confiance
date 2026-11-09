@@ -1,7 +1,7 @@
 ---
 title: "IA au travail : parlons de confiance — Entretien de recherche"
 description: "Une recherche doctorale sur la confiance dans les outils d'IA au travail. Partagez votre expérience lors d'un entretien de 45 minutes."
-booking_url: ""
+booking_url: "https://scheduler.zoom.us/yuntian-ding-paris-1-panth-on-sorbonne-qvzpnx/interview-confiance-en-ia"
 brand:
   prefix: "IA"
   suffix: " au travail"
